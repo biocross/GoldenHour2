@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< Updated upstream
+	<string>46839A8A-7CC8-4ADD-B50B-3D81B934035F</string>
+=======
+	<string>4EC4A985-2B4B-42E4-B6B4-0ED967B533A3</string>
+>>>>>>> Stashed changes
+	<key>IDESourceControlProjectName</key>
+	<string>GoldenHour</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57BFDF9EFBE92ED4F1685EC772E330C1170C1936</key>
+		<string>https://github.com/biocross/GoldenHour.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GoldenHour.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57BFDF9EFBE92ED4F1685EC772E330C1170C1936</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/biocross/GoldenHour.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>57BFDF9EFBE92ED4F1685EC772E330C1170C1936</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57BFDF9EFBE92ED4F1685EC772E330C1170C1936</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GoldenHour</string>
+		</dict>
+	</array>
+</dict>
+</plist>
