@@ -10,10 +10,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface ViewController : UIViewController 
+@interface ViewController : UIViewController <CBCentralManagerDelegate>
 
+@property (nonatomic, strong) CBCentralManager *cbManager;
 
+@property (weak, nonatomic) IBOutlet UIButton *incidentButton;
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 

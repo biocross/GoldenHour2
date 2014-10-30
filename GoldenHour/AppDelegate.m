@@ -83,6 +83,7 @@
     [self.peripheralManager startAdvertising:beaconPeripheralData];
     
     NSLog(@"Turning on broadcasting for incident: %@.", region);
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
     
 }
 
@@ -104,7 +105,7 @@
     if ([region isKindOfClass:[CLBeaconRegion class]]) {
         UILocalNotification *notification = [[UILocalNotification alloc] init];
         notification.alertBody = @"There is an incident nearby!";
-        notification.soundName = @"swipe to know more";
+        notification.soundName = @"swipe to help";
         [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
     }
 }

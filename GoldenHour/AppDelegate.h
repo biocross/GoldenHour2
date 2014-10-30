@@ -21,5 +21,11 @@
 
 @property (nonatomic, strong) CLLocation *location;
 
+
+- (void)startMonitoringBeacons;
+- (void)stopMonitoringBeacons;
+- (void)startBroadcastingIncident;
+    
+    
 @end
 
