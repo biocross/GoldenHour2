@@ -26,6 +26,7 @@
     [self updateTable:nil];
     
     self.timer = [NSTimer timerWithTimeInterval:60 target:self selector:@selector(updateTable:) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error

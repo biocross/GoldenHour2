@@ -24,6 +24,27 @@
     self.incidentButton.enabled = NO;
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSNumber *number = [[NSUserDefaults standardUserDefaults] objectForKey:@"skipInitialScreen"];
+    
+    if(number.boolValue)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"skipInitialScreen"];
+        
+        if([[[NSUserDefaults standardUserDefaults] objectForKey:@"userType"] isEqualToString:@"doctor"])
+        {
+            [self performSegueWithIdentifier:@"doctorSegue" sender:self];
+        }
+        else if([[[NSUserDefaults standardUserDefaults] objectForKey:@"userType"] isEqualToString:@"civilian"])
+        {
+            [self performSegueWithIdentifier:@"civillian" sender:self];
+        }
+    }
+}
+
 -(void)centralManagerDidUpdateState:(CBCentralManager *)central{
     return;
 }
@@ -104,7 +125,15 @@
     return NO;
 }
 
+- (IBAction)doctorTapped:(UIButton *)sender
+{
+    [[NSUserDefaults standardUserDefaults] setObject:@"doctor" forKey:@"userType"];
+}
 
+- (IBAction)civillianTapped:(UIButton *)sender
+{
+    [[NSUserDefaults standardUserDefaults] setObject:@"civilian" forKey:@"userType"];
+}
 
 
 @end

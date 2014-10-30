@@ -26,6 +26,8 @@
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     [self startMonitoringBeacons];
     
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"skipInitialScreen"];
+    
     return YES;
 }
 
